@@ -19,5 +19,10 @@ namespace Animals
          
             Console.WriteLine("I am a Gorilla and I eat bananas");
         }
+
+        public override void Sleep()
+        {
+            Console.WriteLine("Dreaming of bananas");
+        }
     }
 }

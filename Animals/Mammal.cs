@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Animals
 {
-    public class Mammal : Animal
+    public abstract class Mammal : Animal
     {
         public Mammal(string name, int age, double weight, int nibbleCount) : base(name, 2, age, weight)
         {

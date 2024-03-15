@@ -15,6 +15,9 @@ namespace Animals
 
         public string MilkColour { get; set; }
 
-     
+        public override void Sleep()
+        {
+            Console.WriteLine("Sleeping heavily");
+        }
     }
 }

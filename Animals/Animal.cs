@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Animals
 {
-    public class Animal
+    public abstract  class Animal
     {
         public string Name { get; set; }
 
@@ -27,7 +27,8 @@ namespace Animals
         public virtual void Eat() 
         {
             Console.WriteLine("I am an animal and I eat");
-        
         }
+
+        public abstract void Sleep();
     }
 }

@@ -11,5 +11,10 @@ namespace Animals
         public Fish(string name, int eyeCount, int age, double weight) : base(name, eyeCount, age, weight)
         {
         }
+
+        public override void Sleep()
+        {
+            Console.WriteLine("De-attach brain");
+        }
     }
 }
