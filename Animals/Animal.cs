@@ -14,7 +14,7 @@ namespace Animals
 
         public int Age { get; set; }
 
-        public double Weight { get; set; }
+        public virtual double Weight { get;  set; }
 
         public Animal(string name, int eyeCount, int age, double weight)
         {

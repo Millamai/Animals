@@ -11,17 +11,29 @@
 
             /*
 
-
+             Hippo hippo
               Mammal m = new Mammal("Hippo", 2, 300, 2);
 
               Console.WriteLine("Hippo weigth " + m.Weight);
               m.BreastFeed();
               m.Eat();*/
 
-            Hippo hippo = new Hippo("Knud", 2, 300);
+            Hippo hippo;
+            Hippo boerge;
+            try
+            { 
+             hippo = new Hippo("Knud", 2, 300);
 
-            hippo.Eat();
+             boerge = new Hippo("Børge", 2, 5300);
+              
 
+            }
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine($"{ex.Message}");
+
+            }
+           
 
             Gorilla g = new Gorilla("Bent", 4, 150);
             g.Eat();
